@@ -26,6 +26,9 @@
 
    Click [here](https://www.youtube.com/watch?v=CnnM_oVGlDM) to view the application at work.
 
+  ![](assets/pictureProvided.png)
+
+  ![](assets/pictureProvided2.png)
   
   ## Usage 
   To generate as many read me's as you want.
