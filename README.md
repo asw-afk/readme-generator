@@ -34,7 +34,7 @@
     N/A
 
   ## Contributors 
-  I wrote the base code, GitHub resources found here were responsible for all License  ssets provided.
+  I wrote the base code, GitHub resources found [here](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba) were responsible for all License badges and information.
 
   ## Test
  No tests were used in the making of this application.
