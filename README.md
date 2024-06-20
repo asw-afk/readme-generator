@@ -39,5 +39,4 @@
   ## Test
  No tests were used in the making of this application.
 
-  ## Questions 
-  Contact me here.
+  

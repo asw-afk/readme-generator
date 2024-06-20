@@ -48,7 +48,7 @@ const answers = [
   },
   {
     type: "input",
-    message: "Do you have any questions regarding this project?",
+    message: "How will people contact you if they have questions? Email/GitHub ACCT preferred",
     name: "Questions",
   },
   {
@@ -123,7 +123,7 @@ function init() {
   ## Test
   ${data.Tests}
 
-  ## Questions 
+  ## Contact Me 
   ${data.Questions}`;
     fs.writeFile("GeneratedREADME.md", createMarkdown, (err) => {
       err ? console.log(err) : console.log("success");
