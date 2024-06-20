@@ -1,8 +1,7 @@
-// TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-// TODO: Create an array of questions for user input
+//The questions the user will be asked
 
 const answers = [
   {
@@ -62,7 +61,7 @@ const answers = [
 
 
 function renderLicenseLink(data) {
-  if (data.License === "MIT") {
+  if (data.License === "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)") {
     return "[MIT](https://opensource.org/licenses/MIT)";
   } else if (data.License === "ISC") {
     return "[ISC](https://opensource.org/licenses/ISC)";
@@ -94,10 +93,20 @@ function init() {
         }
       }
     }
-    const createMarkdown = ` ## ${data.Title}
+    const createMarkdown = ` # ${data.Title}
   ${data.License}
   ## Description 
   ${data.Description}
+
+
+  ## Table of Contents
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Contributing](#Contributors)
+  - [License](#License)
+  - [Tests](#Tests)
+  - [Questions](#Questions)
+
   
   ## Installation 
    ${data.Installation}
@@ -110,6 +119,9 @@ function init() {
 
   ## Contributors 
   ${data.Contributors}
+
+  ## Test
+  ${data.Tests}
 
   ## Questions 
   ${data.Questions}`;
