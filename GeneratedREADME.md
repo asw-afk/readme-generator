@@ -1,19 +1,19 @@
- ## read me gen
-  
+ ## yuj
+  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
   ## Description 
-  generates a read me
+  
   
   ## Installation 
-   uuuuh
+   
   
   ## Usage 
-  to generate read mes
   
-  ## Liscense 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
+  ## License 
+    Unknown License
 
   ## Contributors 
-  :^O
+  
 
   ## Questions 
-  :^|
+  

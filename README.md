@@ -1,3 +1,3 @@
 # readme-generator
 
-https://www.youtube.com/watch?v=CnnM_oVGlDM
+Click [here](https://www.youtube.com/watch?v=CnnM_oVGlDM) to view application.

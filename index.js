@@ -60,26 +60,42 @@ const answers = [
   },
 ];
 
+
+function renderLicenseLink(data) {
+  if (data.License === "MIT") {
+    return "[MIT](https://opensource.org/licenses/MIT)";
+  } else if (data.License === "ISC") {
+    return "[ISC](https://opensource.org/licenses/ISC)";
+  } else if (data.License === "MPL") {
+    return "[MPL](https://opensource.org/licenses/MPL-2.0)";
+  } else {
+    return "Unknown License";
+  }
+}
+
 // [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 // [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 //  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
-// TODO: Create a function to initialize app
+//Saves user input into a new file
 function init() {
   inquirer.prompt(answers).then(function (data) {
     if (data.License === "MIT") {
       data.License =
         "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
     } else {
-        if (data.License == "ISC") {
-            data.License =
-            "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
-        } else {
-            
+      if (data.License == "ISC") {
+        data.License =
+          "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+      } else {
+        if (data.License == "MPL") {
+          data.License =
+            "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
         }
+      }
     }
     const createMarkdown = ` ## ${data.Title}
-  
+  ${data.License}
   ## Description 
   ${data.Description}
   
@@ -89,8 +105,8 @@ function init() {
   ## Usage 
   ${data.Usage}
   
-  ## Liscense 
-  ${data.License}
+  ## License 
+    ${renderLicenseLink(data)}
 
   ## Contributors 
   ${data.Contributors}
@@ -104,4 +120,4 @@ function init() {
 }
 
 // Function call to initialize app
-init()
+init();
